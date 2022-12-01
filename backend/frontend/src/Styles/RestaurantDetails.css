@@ -1,0 +1,87 @@
+.image{
+  padding: 3vw 5vw;
+}
+
+.heading {
+    width: 298px;
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .Rname, .tabs{
+    margin-left:5vw ;
+    margin-right: 3vw;
+    color: #192f60;
+    font-family: Poppins;
+  }
+
+  .tabs{
+    margin-top: 25px;
+  }
+
+  .about{
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  
+  .about {
+    width: 181px;
+    height: 31px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .head {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    margin-top: 2vw;
+  }
+  
+  .value {
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    margin-bottom: 5vw;
+  }
+
+  .tab{
+    width: 20vw;
+    display: inline;
+    margin:3vw 10vw 5vw 0vw ;
+    cursor: pointer;
+    font-size: larger;
+    border: none;
+  }
+
+  
