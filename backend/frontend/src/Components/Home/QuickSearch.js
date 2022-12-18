@@ -15,7 +15,7 @@ export default class QuickSearch extends Component {
     }
 
     componentDidMount(){
-        fetch('https://sagar-zomato-clone.herokuapp.com/zomato/mealtype', {method : 'GET'})
+        fetch('https://sagar-zomato-clone-app.onrender.com/zomato/mealtype', {method : 'GET'})
         .then(response => response.json())
         .then(output => this.setState({mealtypes : output.data}))
     }

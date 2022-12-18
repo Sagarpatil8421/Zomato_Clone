@@ -47,7 +47,7 @@ export default function (props) {
       };
     
       const handleLogin = async (emailId,password) =>{
-        let result = await fetch('https://sagar-zomato-clone.herokuapp.com/user/login',{
+        let result = await fetch('https://sagar-zomato-clone-app.onrender.com/user/login',{
           method:'post',
           body: JSON.stringify({email:emailId,password:password}),
           headers:{

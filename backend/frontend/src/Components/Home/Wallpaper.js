@@ -17,13 +17,13 @@ export default class Wallpaper extends Component{
     }
 
     fetchRestaurants = (event)=>{
-        fetch(`https://sagar-zomato-clone.herokuapp.com/zomato/restaurants/${event.target.value}`,{method:'GET'})
+        fetch(`https://sagar-zomato-clone-app.onrender.com/zomato/restaurants/${event.target.value}`,{method:'GET'})
         .then(response => response.json())
         .then(data => this.setState({restaurants : data.data}))
     }
 
     componentDidMount(){       
-        fetch('https://sagar-zomato-clone.herokuapp.com/zomato/locations',{method:'GET'})
+        fetch('https://sagar-zomato-clone-app.onrender.com/zomato/locations',{method:'GET'})
         .then(response => response.json())
         .then(data => this.setState({locations : data.data}))
     }

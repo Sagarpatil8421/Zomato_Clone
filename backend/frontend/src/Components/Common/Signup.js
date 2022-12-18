@@ -38,7 +38,7 @@ export default function (props) {
 
       const fetchApi=async (Name,email,password)=>{
                                 //http://localhost:8080
-        let result = await fetch('https://sagar-zomato-clone.herokuapp.com/user/signup',{
+        let result = await fetch('https://sagar-zomato-clone-app.onrender.com/user/signup',{
           method:'post',
           body: JSON.stringify({name:Name,email:email,password:password}),
           headers:{

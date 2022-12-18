@@ -29,7 +29,7 @@ export default function Filter() {
     })
 
     useEffect(()=>{
-        fetch(`https://sagar-zomato-clone.herokuapp.com/zomato/restaurants/filter/${currentPage}`,{
+        fetch(`https://sagar-zomato-clone-app.onrender.com/zomato/restaurants/filter/${currentPage}`,{
             method:'POST',
             headers:{'Content-type': 'application/json'},
             body:JSON.stringify(filter)
@@ -41,7 +41,7 @@ export default function Filter() {
     // console.log(restaurant.length) 
 
     useEffect(()=>{
-        fetch(`https://sagar-zomato-clone.herokuapp.com/zomato/locations`,{
+        fetch(`https://sagar-zomato-clone-app.onrender.com/zomato/locations`,{
             method: 'GET',
             headers:{'Content-type':'application/json' },
             // body :JSON.stringify(location) 

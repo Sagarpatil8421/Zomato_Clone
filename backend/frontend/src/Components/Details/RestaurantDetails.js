@@ -20,13 +20,13 @@ export default function RestaurantDetails() {
   let {rName} = useParams()
   //lifeCycle Hooks 
   useEffect( ()=>{
-    fetch(`https://sagar-zomato-clone.herokuapp.com/zomato/restaurants/details/${rName}`,{method:'GET'})
+    fetch(`https://sagar-zomato-clone-app.onrender.com/zomato/restaurants/details/${rName}`,{method:'GET'})
     .then(response => response.json())
     .then(data => setRestaurant(data.data[0]))
   }, [] );
 
   const fetchMenu= ()=>{
-    fetch(`https://sagar-zomato-clone.herokuapp.com/zomato/${rName}`,{method:'GET'})
+    fetch(`https://sagar-zomato-clone-app.onrender.com/zomato/${rName}`,{method:'GET'})
     .then(response=>response.json())
     .then(data =>setMenu(data.data))
   }
@@ -61,7 +61,7 @@ export default function RestaurantDetails() {
 
       // API generate order in backend
       let orderData;
-      orderData = await fetch('https://sagar-zomato-clone.herokuapp.com/payment', {
+      orderData = await fetch('https://sagar-zomato-clone-app.onrender.com/payment', {
             method:'POST',
             headers:{'Content-Type' : 'application/json'},
             body: JSON.stringify({amount : totalPrice})
@@ -83,7 +83,7 @@ export default function RestaurantDetails() {
 
         handler:function(response){
           console.log(response)
-          fetch('https://sagar-zomato-clone.herokuapp.com/payment/save', {
+          fetch('https://sagar-zomato-clone-app.onrender.com/payment/save', {
             method:'POST',
             headers:{'Content-Type' : 'application/json'},
             body: JSON.stringify({
